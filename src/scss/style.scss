@@ -148,7 +148,6 @@ section.text-photo {
 
 .we-can-help {
     background-color: white;
-    // padding-inline: $contPaddingSmall;
     p {
         font-size: 16px;
         letter-spacing: 2.56px;
@@ -267,6 +266,30 @@ section.text-photo {
             background-color: white;
             position: relative;
             left: -10px;
+        }
+    }
+}
+
+.thymes {
+    margin: 25px 0;
+    ul {
+        padding-inline: $contPaddingSmall;
+        margin: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        li {
+            aspect-ratio: 2/1;
+            // border: 1px solid black;
+            padding: 0 0 0 67px;
+            h3 {
+                font-size: 28px;
+                font-weight: normal;
+            }
+            p {
+                font-size: 16px;
+                color: #22356f80;
+            }
         }
     }
 }

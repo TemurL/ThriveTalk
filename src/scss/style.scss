@@ -89,11 +89,17 @@ header {
         border: none;
     }
     #btn2 {
-        color: $Orange;
-        background: transparent;
-        border: none;
         margin-left: 1rem;
     }
+}
+
+.btnDisTrans {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $Orange;
+    background: transparent;
+    border: none;
 }
 
 main {
@@ -115,7 +121,7 @@ main {
 }
 
 
-section.text-photo {
+.text-photo#why-thrive {
     background-color: $ActColor;
     color: white;
     p {
@@ -271,7 +277,7 @@ section.text-photo {
 }
 
 .thymes {
-    margin: 25px 0;
+    margin: 2rem 0;
     ul {
         padding-inline: $contPaddingSmall;
         margin: 0;
@@ -290,6 +296,59 @@ section.text-photo {
                 font-size: 16px;
                 color: #22356f80;
             }
+        }
+    }
+}
+
+#also {
+    padding: 0;
+    margin: 40px 0 0 0;
+    justify-content: flex-start;
+    align-items: stretch;
+    .text {
+        padding: 2rem 0 2rem $contPadding;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 36px;
+        p:first-child {
+            font-weight: 300;
+            font-size: 16px;
+            letter-spacing: 0.96px;
+        }
+        em {
+            color: $ActColor;
+            font-style: normal;
+        }
+    }
+}
+
+#ready {
+    padding: 0;
+    align-items: stretch;
+    background-color: $PriColor;
+    color: white;
+    .text {
+        padding: 2rem 0 2rem $contPadding;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 36px;
+        h3 {
+            font-size: 64px;
+            margin-bottom: 0;
+        }
+        p:first-child {
+            font-weight: 300;
+            font-size: 16px;
+            letter-spacing: 0.96px;
+        }
+        button {
+            color: $ActColor;
         }
     }
 }

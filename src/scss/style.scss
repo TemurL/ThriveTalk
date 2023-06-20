@@ -377,7 +377,7 @@ main {
         display: flex;
         align-items: start;
         justify-content: space-between;
-        padding: 90px $contPaddingSmall;
+        padding: 90px $contPaddingSmall 0;
         font-size: 16px;
         color: rgba(34, 53, 111, 0.5);
         h4 {
@@ -400,5 +400,5 @@ footer {
     height: 80px;
     display: flex;
     align-items: center;
-    
-}   
+
+}

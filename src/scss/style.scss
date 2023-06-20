@@ -7,6 +7,14 @@ $contPaddingSmall: 5vw;
 html { 
     font-size: 24px;
     font-family: 'Mukta';
+    scroll-behavior: smooth;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    button {
+        cursor: pointer;
+    }
 }
 
 body {
@@ -58,6 +66,10 @@ header {
         border-radius: 55px;
         border: none;
         cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            background-color: #36b3c4;
+        }
     }
 }
 
@@ -87,6 +99,10 @@ header {
         color: white;
         background-color: $Orange;
         border: none;
+        transition: 0.3s;
+        &:hover {
+            background-color: #ef9e13;
+        }
     }
     #btn2 {
         margin-left: 1rem;
@@ -351,4 +367,38 @@ main {
             color: $ActColor;
         }
     }
+}
+
+.last {
+    display: flex;
+
+    .text-block {
+        flex: 1;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding: 90px $contPaddingSmall;
+        font-size: 16px;
+        color: rgba(34, 53, 111, 0.5);
+        h4 {
+            color: $PriColor;
+            font-weight: bold;
+        }
+        em {
+            color: rgba(0, 109, 255, 1);
+            font-style: normal;
+        }
+    }
+}
+
+footer {
+    background-color: $ActColor;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 0 0 $contPadding;
+    height: 80px;
+    display: flex;
+    align-items: center;
+
 }
